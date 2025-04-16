@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cvx8vkqtd7qxh" path="res://Assets/sprites/world_tileset.png" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://6e172pm31bs3" path="res://Scenes/platform.tscn" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://bbiyeyems38ea" path="res://Scenes/coin.tscn" id="4_3dryh"]
-[ext_resource type="PackedScene" uid="uid://plsr5s4pm6n8" path="res://Scenes/killzone.tscn" id="5_wowpa"]
+[ext_resource type="PackedScene" uid="uid://plsr5s4pm6n8" path="res://Scenes/OutOfBoundsZone.tscn" id="5_wowpa"]
 [ext_resource type="FontFile" uid="uid://c328dgcblf01u" path="res://Assets/fonts/PixelOperator8.ttf" id="8_h4fw4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qxrlw"]
@@ -439,9 +439,9 @@ zoom = Vector2(4, 4)
 limit_bottom = 120
 position_smoothing_enabled = true
 
-[node name="Killzone" parent="." instance=ExtResource("5_wowpa")]
+[node name="OutOfBoundsZone" parent="." instance=ExtResource("5_wowpa")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OutOfBoundsZone"]
 position = Vector2(0, 100)
 shape = SubResource("WorldBoundaryShape2D_i6g32")
 

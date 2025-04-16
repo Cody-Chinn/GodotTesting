@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdddqop7xmdjm"]
+
+[ext_resource type="Script" uid="uid://grn7n58o2ffe" path="res://Scripts/EnemyDamageZone.gd" id="1_i8u2y"]
+
+[node name="EnemyDamageZone" type="Area2D"]
+script = ExtResource("1_i8u2y")
